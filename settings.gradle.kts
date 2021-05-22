@@ -7,5 +7,20 @@
  * in the user manual at https://docs.gradle.org/6.8.3/userguide/multi_project_builds.html
  */
 
+ import de.fayard.refreshVersions.bootstrapRefreshVersions
+ import org.danilopianini.VersionAliases.justAdditionalAliases
+ buildscript {
+     repositories {
+         gradlePluginPortal()
+         mavenCentral()
+     }
+     dependencies {
+         classpath("de.fayard.refreshVersions:refreshVersions:0.9.5")
+         classpath("org.danilopianini:refreshversions-aliases:+")
+     }
+ }
+ bootstrapRefreshVersions(justAdditionalAliases)
+
+
 rootProject.name = "hotlinecesena"
 include("app")
