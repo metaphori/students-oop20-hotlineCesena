@@ -37,4 +37,4 @@ org.eclipse.*
 
 # Ignore generated map file
 /app/src/main/resources/File/WorldMap.txt
-/app/src/main/resources/File/GeneratedMap/*
+*hotline-cesena.jar
